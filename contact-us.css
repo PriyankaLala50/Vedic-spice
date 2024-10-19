@@ -1,0 +1,94 @@
+:root{
+    --success-color: rgb(88, 227, 33);
+    --error-color:rgb(243, 59, 8);
+}
+.contact{
+  margin-top: 30px;
+padding: auto;
+
+background-image: url(./images/background.avif);
+height: 400px;
+width: 100%;
+background-size: cover;
+background-position: center center;
+}
+.us{
+  
+    text-align: center;
+    font-weight: 700;
+   
+  
+}
+.vedic_contact_us{
+    padding: 0 0 0 3%;
+    margin-bottom: 3%;
+    background-position: 50%;
+    background-position-x: 50%;
+    background-position-y:center ;
+}
+.input{
+   margin-left: 50%;
+   margin-right: 50%;
+    -webkit-appearance: none;
+
+}
+label{
+    text-transform: uppercase;
+}
+.form-Control lable{
+    color: rgb(102, 89, 89);
+    display: block;
+    margin-bottom: 5px;
+ }
+
+ .form-Control input {
+    display: block;
+    border: 2px solid #080808;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.form-Control textarea{
+    display: block;
+    border: 2px solid #080808;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.send {
+background-color: gold;
+margin-top: 10px;
+margin-left: 550px;
+align-items: center;
+width: 20%;
+padding: 10px;
+
+}
+.form-Control.success input{
+    border-color: var(--success-color);
+}
+
+.form-Control.error input{
+    border-color: var(--error-color);
+}
+.form-Control small{
+    color: var(--error-color);
+    position: absolute;
+    visibility: hidden;
+    margin-bottom: 0;
+    left: 0;
+}
+.form-Control.error small{
+    visibility: visible;
+}
+.form-Control.success small{
+    visibility: hidden;
+}
+@media only screen and (max-width: 500px) {
+    .send{
+     
+          margin: 10px ;
+          margin-left: 150px;
+       align-items: center;
+    }
+}

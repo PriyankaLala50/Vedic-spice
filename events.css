@@ -1,0 +1,90 @@
+.events_register{
+    margin: 0px;
+    padding: 0px;
+   
+}
+:root{
+    --success-color: rgb(88, 227, 33);
+    --error-color:rgb(243, 59, 8);
+}
+@import url(./QwitcherGrypen-Regular.ttf);
+h2{
+    font-family: "Qwitcher Grypen", cursive;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 80px;
+}
+img{
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 30px;
+}
+#inputCity{
+  margin-top: 20px;
+}
+@media only screen and (max-width: 600px){
+    img{
+        height: 200px;
+        width: 200px;
+         margin: 0 50px;
+        margin-bottom: 10px;
+       float: none;
+    }
+    h2{
+      margin: 0 50px;  
+    }
+}
+@media only screen and (min-width:992px){
+    .event_wrap{
+        margin-top: 350px;
+   
+    }
+    input{
+      width: 3000px;
+    }
+   .btn{
+     width: 500px;   
+    }
+}
+ @media only screen and (max-width: 600px){
+      button{
+        margin-right: 50px;
+        margin-left:50px ;
+        width:200px;
+        margin-left: 20px;
+       align-items: center;
+    }  
+ 
+     input{
+        width: 200px;
+     }
+}
+.details{
+    margin-top: 40px;
+} 
+
+small{
+    color: var(--error-color);
+    visibility: hidden;
+    margin-bottom: 0;
+    left: 0;
+}
+.form-control.error small {
+    visibility: visible;
+  }
+  
+  .form-control.success small {
+    visibility: hidden;
+  }
+  .background{
+    margin-top: 30px;
+    background-color:ivory;
+    width: 100%;
+    height: 800px;
+}
+.card{
+    display: flex;
+}

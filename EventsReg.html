@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./events.css">
+<link rel="stylesheet" href="./bootstrap.min.css">
+  <script src="./bootstrap.min.js"></script> 
+ 
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      <div class="events_register">
+        <img src="./images/Blue Photography Concert Music Event Instagram Post.png">
+    <h2>Music Fest</h2>
+    <div class="event_wrap">
+      <form>
+      <div class="row" style="gap: 20px;">
+      <div class="col" style="gap: 20px;">
+      <div class="dropdown" style="display: flex; gap: 30px;">
+        <input type="date">
+       
+       <input type="time">
+        </button> 
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" >11:00 AM</a></li>
+          <li><a class="dropdown-item" >12 Noon</a></li>
+          <li><a class="dropdown-item">1:00 PM</a></li>
+        </ul>
+        <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="border: 1px solid black;">
+          1  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg>
+        </button> 
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" >
+          <li><a class="dropdown-item" >2</a></li>
+          <li><a class="dropdown-item" >3</a></li>
+          <li><a class="dropdown-item">4</a></li>
+        </ul>   
+      </div>
+    </div> 
+    </div>
+    <div class="details">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+          <small>Error</small>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Phone Number" aria-label="Last name">
+          <small>Error</small>
+        </div> 
+      </div>
+        <div class="col">
+          <input type="text" class="form-control" id="inputCity" placeholder="Maharastra"  disabled>
+          
+        </div>
+        <div class="col">
+          <label for="inputState" class="form-label">City</label>
+          <select id="inputState" class="form-select">
+            <option selected>Pune</option>
+            <option>Mumbai</option>
+          </select>
+      </div>
+      <div class="form-check" style="margin-top: 10px;">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+        Agree to Terms & condition
+        </label>
+      </div>
+    </div>
+    <div class="col">
+      <button type="submit" class="btn btn-primary" style="margin-top: 10px;"> Register</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </form>
+ <script >
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed");
+    const form = document.querySelector('form');
+    const username = document.querySelector('input[placeholder="First name"]');
+    const phone = document.querySelector('input[placeholder="Phone Number"]');
+    console.log("form");  // Check if the form is selected
+  console.log(username);  // Check if the username input is selected
+  console.log(phone); 
+    function showError(input, message) {
+      const formControl = input.parentElement;
+      formControl.classList.add('error');
+      const small = formControl.querySelector('small');
+      mall.style.visibility = "visible";
+      small.innerText = message;
+    }
+  
+    function showSuccess(input) {
+      const formControl = input.parentElement;
+      formControl.classList.remove('error');
+      formControl.classList.add('success');
+    }
+  
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      if (username.value === '') {
+        showError(username, 'Username is required');
+      } else {
+        showSuccess(username);
+      }
+      
+      if (phone.value === '') {
+        showError(phone, 'Phone number is required');
+      } else {
+        showSuccess(phone);
+      }
+    });
+  });
+  
+ </script>
+</body>
+</html>

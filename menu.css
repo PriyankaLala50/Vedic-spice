@@ -1,0 +1,57 @@
+.menu-wrap{
+   
+        background-color: ivory;  
+        height: 800px;
+        width: 100%;
+        background-image: url(./images/Table+Spreads+1.jpeg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+      }
+ul{
+  list-style: none;
+}
+@import url(./QwitcherGrypen-Regular.ttf);
+.heading_Menu{
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  font-size: 100px;
+}
+/* .banner_menu{ */
+  /* margin: 0 auto;
+transition: transform .2s; */
+
+/* } */
+/* .banner_menu:hover{ */
+  /* transform: scale(1.1); */
+/* } */
+
+
+h4{
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100px;
+}
+.menu_stack{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.dessert_menu{
+  float: right;
+  width: 600px;
+  margin: 10px;
+}
+
+.main_menu h4 {
+  text-align: center;
+  font-size: 80px;
+}
+.menu_stack img {
+  max-width: 600px;  
+  height: auto;      
+}

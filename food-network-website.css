@@ -1,0 +1,217 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.header_outer{
+    box-shadow: var(sticky);
+    backdrop-filter: blur(10px);
+    position:sticky;
+    z-index: 100;
+padding: 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #fff;
+   
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-origin: initial;
+    background-clip: initial;
+}
+
+.Header_inner{
+    background: #fff;
+
+    
+   
+}
+ .navbar-nav .nav-link {
+    color: #D4AF37;
+    font-weight: 700; 
+   
+  margin-top: 10px;
+  margin-left: 65px;
+  margin-right: 65px;
+  }
+ 
+  .navbar-nav .nav-link:focus,
+  .navbar-nav .nav-link:hover{
+   color: red;
+  }
+ .carousel-item img {
+ height: 500px;
+ }
+
+ .welcome{
+  color: #333333;
+  background-color: #FFFFF0;
+  margin-right: 10px;
+  overflow: hidden;
+  width: 100%;
+  
+ 
+ }
+
+ 
+#contactus:hover{
+color: red !important;
+}
+p{
+  
+  margin-right: 600px;
+ 
+}
+h3{
+  margin-left:250px;
+}
+.spices{
+  float: right;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 60px;
+}
+.Wraper{
+  margin: 20px;
+  text-align: center;
+}
+ .para-wrap{
+  margin: 20px;
+  text-align: center;
+ }
+ 
+ @media only screen and (max-width: 600px) {
+  h3{
+    font-size: 1.5rem;
+        margin: 10px ;
+        text-align: center;
+  }
+  p{
+    font-size: 0.9rem;
+    padding: 10px;
+    margin: 10px auto ;
+   
+  }
+  .spices{
+    display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+
+    
+  }
+  .welcome{
+    padding: 20px;
+  }
+}
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card{
+ margin: 60px;
+max-width: 20rem;
+padding: auto;
+flex: 1 1 20rem;
+
+}
+.card-img-top{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+/* /* @media only screen and (max-width: 600px){
+  .flex-container{
+    display: block;
+    flex-direction: column;
+
+  }  
+} */
+.hide{
+  display: none;
+}
+.card-img-top:hover+.hide{
+  display: block;
+  color: crimson;
+  font-weight: 700;
+  text-align: center;
+}
+@media only screen and (max-width: 600px){
+  .events{
+    font-size: 1.5rem;
+    margin: 10px ;
+    text-align: center;
+}
+p{
+font-size: 0.9rem;
+padding: 10px;
+margin: 10px auto ;
+
+}
+.spiceimg{
+  width:20rem;
+  height: 90px;
+}
+  } 
+.spiceimg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.events{
+  background-color: #fff;
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  text-decoration: none;
+
+}
+.footer{
+  background-color: crimson;
+ 
+  
+}
+@import url(./QwitcherGrypen-Regular.ttf);
+h4
+  {
+    font-family: "Qwitcher Grypen", cursive;
+    margin: 10px;
+    font-style: normal;
+    color:#FFFFF0;
+
+  }
+.newsletter{
+  margin: 10px;
+  width: 450px;
+  height: 30px;
+  margin-top: 5px;
+
+}
+@media only screen and (max-width: 600px){
+  .footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .newsletter{
+    width: fit-content;
+    margin-left: 20px;
+  }
+  .social{
+    display: flex;
+    margin-left:auto ;
+    margin-right: auto;
+   
+  }
+  .contents{
+    display: flex;
+   
+   
+  }
+}
